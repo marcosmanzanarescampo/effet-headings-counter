@@ -1,0 +1,19 @@
+:root{
+    counter-reset: headings;
+}
+
+h1{
+    counter-increment: headings;
+}
+
+h1::before{
+    content: counter(headings);
+
+
+    /* additionel */
+    background-color: #0071FF;
+    border-radius: 2px;
+    padding: 0.15em 0.2;
+    width: 90px;
+    text-align: center;
+}
